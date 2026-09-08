@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
-  "name": "io.github.opsmaxx/opsmaxx",
-  "description": "Operate your SSH servers, files, containers and databases through the OpsMaxx desktop app, scoped by access group and audited.",
-  "version": "0.1.0",
+  "name": "io.github.OpsMaxx/opsmaxx",
+  "description": "SSH, files, containers and databases via the OpsMaxx desktop app - scoped per capability, audited.",
+  "version": "0.1.1",
   "websiteUrl": "https://opsmaxx.dev",
   "repository": {
     "url": "https://github.com/OpsMaxx/opsmaxx-mcp",
@@ -13,8 +13,10 @@
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "@opsmaxx/mcp",
-      "version": "0.1.0",
-      "transport": { "type": "stdio" },
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
       "environmentVariables": [
         {
           "name": "OPSMAXX_MCP_TOKEN",
