@@ -1,5 +1,6 @@
 {
   "name": "@opsmaxx/mcp",
+  "mcpName": "io.github.opsmaxx/opsmaxx",
   "version": "0.1.0",
   "description": "Connect any stdio MCP client to a running OpsMaxx desktop app.",
   "keywords": [

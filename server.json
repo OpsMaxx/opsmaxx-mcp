@@ -1,0 +1,34 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.opsmaxx/opsmaxx",
+  "description": "Operate your SSH servers, files, containers and databases through the OpsMaxx desktop app, scoped by access group and audited.",
+  "version": "0.1.0",
+  "websiteUrl": "https://opsmaxx.dev",
+  "repository": {
+    "url": "https://github.com/OpsMaxx/opsmaxx-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@opsmaxx/mcp",
+      "version": "0.1.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "OPSMAXX_MCP_TOKEN",
+          "description": "Session token from AI & MCP -> AI Agents -> New AI agent session in the OpsMaxx app. Scoped to one workspace and one access group.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "OPSMAXX_MCP_PORT",
+          "description": "Port the OpsMaxx MCP bridge listens on, shown under AI & MCP -> Security. Defaults to the session cached by the opsmaxx CLI.",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}
